@@ -1,0 +1,141 @@
+body{
+background: url(recursos/fondomenu.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: #FFB545;
+}
+
+a{
+text-decoration: none;
+color: #FFB545;}
+
+.topnav{
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+justify-content: space-between;
+margin: 2%;
+}
+
+.topnav a{
+color: #FFB545;
+font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+}
+
+.topnav a:visited {
+  color: #FFB545;
+}
+
+.idiomas:hover {
+padding-bottom: 3px;
+border-bottom: 4px solid #FFB545;  
+}
+
+.idiomas a:active {
+  border-bottom: 2px solid;
+  color: #FFB545; 
+}
+
+.menuicon {
+width:20px;
+fill:#FFB545;}
+
+.menuicon:hover{
+width: 30px; 
+top: 27px;
+position: absolute;
+right: 33px; 
+}
+.idiomas{
+margin-left: 5px;
+margin-right: 5px;
+}
+.ajustando{
+left: 50%;position: absolute;transform: translateX(-50%);}
+
+.firstdiv {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+font-family: Montserrat;
+font-weight: bold;
+}
+.firstdiv a:hover{
+	font-size: 20px;
+}
+.seconddiv {
+position: absolute;
+top: 20%;
+left: 40px;
+font-family: Montserrat;
+font-weight: bold;
+right: 40%;
+text-align: justify;
+height: max-content;	
+}
+
+.texto1 {
+margin-top: 5px;
+margin-bottom: 5px;
+color: #FFB545;
+font-size: 2.5em;
+text-align: center;
+
+}
+hr{
+border: 1px solid #FFB545;
+}
+
+.footer {
+   position: absolute;
+   top: 1080px;
+   bottom: 10px;
+   left: 0px;
+   right: 0px;
+   width: 100%;
+   margin-right: 0px;
+display:flex;
+flex-direction: row;
+flex-wrap: no-wrap;
+justify-content: center;
+align-items: center;
+}
+
+.socialmedia {
+margin-left: 5px;
+margin-right: 5px;
+color: #FFB545;
+display: flex;
+flex-direction: row;
+}
+.sm{
+ margin-right: 5px;
+ fill:#FFB545;
+ width:25px;
+}
+.contacto{
+display:flex;}
+.contacto a:hover{
+padding-bottom: 3px;
+border-bottom: 2px solid #707070;
+}
+.footer a:hover{
+	width:30px;
+	font-weight: bold;
+}
+
+#about {
+	font-weight: normal;
+	color: white;
+}
+.fotosabout{
+position: absolute;
+top: 40%;
+right: 40px;
+height: 300px;
+}

@@ -1,0 +1,389 @@
+body{
+font-family: "Open Sans",sans-serif;
+font-weight: 300;}
+
+.welcometext {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+}
+
+.texto1 {
+color: #969696;
+font-size: 5em;
+text-align: center;
+}
+/*
+.cuerpotarjeta{
+  width: 100vw;
+  height: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+*/
+.fondomenu{
+background: url(recursos/fondomenu1.jpg) no-repeat center center fixed; 
+-webkit-background-size: cover;
+-moz-background-size: cover;
+-o-background-size: cover;
+background-size: cover;
+color: #FFB545;
+}
+.oscurecerbg{
+  background-color: rgba(0, 0, 0, 0.6);
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  left: 0px;
+  top: 0px;
+}
+a{
+text-decoration: none;
+color: #FFB545;}
+
+.topnav{
+display:-webkit-flex;
+display:-ms-flexbox;
+display:flex;
+justify-content: space-between;
+margin: 2%;
+}
+
+.topnav a{
+color: #FFB545;
+font-family: Montserrat;
+font-weight: bold;
+font-size: 14px;
+}
+
+.topnav a:visited {
+  color: #FFB545;
+}
+
+.idiomas:hover {
+padding-bottom: 3px;
+border-bottom: 4px solid #FFB545;  
+}
+
+.idiomas a:active {
+  border-bottom: 2px solid;
+  color: #FFB545; 
+}
+
+.menuicon {
+width:20px;
+fill:#FFB545;}
+
+.menuicon:hover{
+width: 30px; 
+top: 27px;
+position: absolute;
+right: 33px; 
+}
+.idiomas{
+margin-left: 5px;
+margin-right: 5px;
+}
+.ajustando{
+left: 50%;position: absolute;transform: translateX(-50%);}
+
+}
+#firstdiv {
+font-family: Montserrat;
+font-weight: bold;
+text-align: justify;
+width: 60%;
+margin-left: 10px;
+}
+
+.divmenu {
+position:absolute;
+top:50%;
+left:50%;
+transform: translate(-50%, -50%);
+font-family: Montserrat;
+font-weight: bold;
+}
+.divmenu a:hover{
+  font-size: 20px;
+}
+.texto1 {
+margin-top: 5px;
+margin-bottom: 5px;
+color: #FFB545;
+font-size: 2.5em;
+text-align: center;}
+
+.seconddiv {
+	width: 35%;
+	align-items: center;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap}
+
+hr{
+border: 1px solid #FFB545;
+}
+
+.footer {
+   position: absolute;
+   bottom: 10px;
+   left: 0px;
+   right: 0px;
+   width: 100%;
+   margin-right: 0px;
+display:flex;
+flex-direction: row;
+flex-wrap: no-wrap;
+justify-content: center;
+align-items: center;
+}
+
+.socialmedia {
+margin-left: 5px;
+margin-right: 5px;
+display: flex;
+flex-direction: row;
+}
+.sm{
+ margin-right: 5px;
+ width:25px;
+}
+.contacto{
+display:flex;}
+.contacto a:hover{
+padding-bottom: 3px;
+border-bottom: 2px solid #707070;
+}
+.footer a:hover{
+	width:30px;
+	font-weight: bold;
+}
+
+#abouttext {
+	font-weight: normal;
+	color: #707070;
+	font-size: 15px;
+}
+.fotosabout{
+width: 80%;
+}
+
+.fillgrey{
+	fill: #707070;
+	color:#707070;
+}
+.fillyellow{
+	fill: #FFB545;
+	color: #FFB545;
+}
+
+.contenedorabout{
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+}
+.distancia{
+  position: unset;
+}
+.container-grid{
+  display: grid;
+  grid-template-columns: repeat(auto-fit,minmax(350px,3fr));
+  grid-row-gap: 20px;
+  grid-column-gap:auto-fit;
+  justify-items: center;
+  margin-top: 5%;
+  margin-bottom: 2%;
+}
+.tarjeta{
+  height: 450px;
+  width: 350px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  overflow: hidden;
+  background-position: top right;
+  transition: 2s background-position cubic-bezier(.22,.61,.36,1);
+}
+
+
+.arriba{
+  width: 100%;
+  height: 400px;
+  background-position: top right;
+  transition: 2s background-position cubic-bezier(.22,.61,.36,1);
+}
+.arriba:hover{
+  background-position: center left !important;
+  cursor: pointer;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+
+}
+.abajo{
+  width: 100%;
+  height: 50px;
+  color: #616161;
+  font-size: 20px;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+}
+#gaydarui{
+  background-image: url(recursos/thumbnailgaydarui.jpg);
+  background-size: cover;
+}
+#abbeautyui{
+  background-image: url(recursos/abthumbnail.jpg);
+  background-size: cover;
+}
+#zombeepui{
+  background-image: url(recursos/thumbnailzombeep.jpg);
+  background-size: cover;
+}
+#gaydarvideo{
+  background-image: url(recursos/thumbnailgaydarad.jpg);
+  background-size: cover;
+}
+#homeorchestravideo{
+  background-image: url(recursos/thumbnailho.jpg);
+  background-size: cover;
+}
+#motionsocialmediavideo{
+  background-image: url(recursos/thumbnailmgsm.jpg);
+  background-size: cover;
+}
+#smadsvideo{
+  background-image: url(recursos/thumbnailvideossm.jpg);
+  background-size: cover;
+}
+#christmasoutrovideo{
+  background-image: url(recursos/thumbnailsanta.jpg);
+  background-size: cover;
+}
+#lovespiritvideo{
+  background-image: url(recursos/thumbnaillovespirit.jpg);
+  background-size: cover;
+}
+#nothingspecialad{
+  background-image: url(recursos/thumbnailnothingspecial.jpg);
+  background-size: cover;
+}
+#cuatrovientosad{
+  background-image: url(recursos/thumbnail4vientos.jpg);
+  background-size: cover;
+}
+#nueveoctubread{
+  background-image: url(recursos/thumbnail9octubre.jpg);
+  background-size: cover;
+}
+#robots{
+  background-image: url(recursos/thumbnailrobots.jpg);
+  background-size: cover;
+}
+#spainpunk{
+  background-image: url(recursos/thumbnailspainpunk.jpg);
+  background-size: cover;
+}
+#uniimposibles{
+  background-image: url(recursos/thumbnailuniimposible.jpg);
+  background-size: cover;
+}
+#hotmalelogo{
+  background-image: url(recursos/thumbnailhotmale.jpg);
+  background-size: cover;
+}
+#gspotlogo{
+  background-image: url(recursos/Thumbnailgspot.jpg);
+  background-size: cover;
+}
+#gaydarhotspotlogo{
+  background-image: url(recursos/Thumbnailgaydarhotspot.jpg);
+  background-size: cover;
+}
+#pabloeliceslogo{
+  background-image: url(recursos/thumbnailpabloelices.jpg);
+  background-size: cover;
+}
+#catedravectalialogo{
+  background-image: url(recursos/thumbnailcatedra.jpg);
+  background-size: cover;
+}
+#alicanteprint{
+  background-image: url(recursos/thumbnailalicanteprints.jpg);
+  background-size: cover;
+}
+#recetasprint{
+  background-image: url(recursos/thumbnailrecetas.jpg);
+  background-size: cover;
+}
+#popupbookprint{
+  background-image: url(recursos/thumbnailbook.jpg);
+  background-size: cover;
+}
+#vinoprint{
+  background-image: url(recursos/thumbnailbotellas.jpg);
+  background-size: cover;
+}
+#cdprint{
+  background-image: url(recursos/thumbnailcd.jpg);
+  background-size: cover;
+}
+
+.sectiontitle{
+  text-align: center;
+  margin-top: 5%;
+  font-size: 24px;
+  font-weight: bold;
+}
+.contenedorproyecto{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: justify;
+  margin-bottom: 50px;
+  font-family: Montserrat;
+  font-weight: 400;
+  font-optical-sizing: 1px;
+  line-height: 1.6;
+}
+.contenidoproyecto{
+  display: flex;
+  width: 600px;
+  flex-wrap: wrap;
+}
+.videoproyecto{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+img .videoproyecto{
+  width: 90%;
+}
+.resaltarimagen{
+  box-shadow: 0 5px 15px gray;
+}
+.contenidoproyecto2{
+  display: flex;
+  width: 80%;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.lunares{
+  background: url(recursos/lunaresfondo.png);
+  position: absolute;
+  z-index: -5;
+  opacity: 30%;
+  width: 400px;
+  height: 400px;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  top: 120%;
+  right: 15%;
+}
