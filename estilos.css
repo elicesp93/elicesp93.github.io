@@ -25,7 +25,7 @@ text-align: center;
 }
 */
 .fondomenu{
-background: url(recursos/fondomenu1.jpg) no-repeat center center fixed; 
+background: url("https://pabligeeks.files.wordpress.com/2020/06/fondomenu1.jpg") no-repeat center center fixed; 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
@@ -52,6 +52,7 @@ display:-ms-flexbox;
 display:flex;
 justify-content: space-between;
 margin: 2%;
+align-items: center;
 }
 
 .topnav a{
@@ -386,4 +387,16 @@ img .videoproyecto{
   background-repeat: no-repeat;
   top: 120%;
   right: 15%;
+}
+
+h3{
+  font-weight: 500;
+  font-size: 14px;
+  color: #808080a8;
+}
+.topnav h3 a{
+  font-weight: 500;
+font-size: 14px;
+padding-bottom: 3px;
+border-bottom: 2px solid;
 }
