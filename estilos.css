@@ -247,6 +247,10 @@ width: 80%;
   background-image: url(recursos/thumbnailzombeep.jpg);
   background-size: cover;
 }
+#eduidaui{
+  background-image: url(recursos/thumbnaileduida.jpg);
+  background-size: cover;
+}
 #gaydarvideo{
   background-image: url(recursos/thumbnailgaydarad.jpg);
   background-size: cover;
