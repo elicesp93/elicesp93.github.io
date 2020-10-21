@@ -25,13 +25,14 @@ text-align: center;
 }
 */
 .fondomenu{
-background: url("https://pabligeeks.files.wordpress.com/2020/06/fondomenu1.jpg") no-repeat center center fixed; 
+background: url('recursos/fondomenu1.jpg'); 
 -webkit-background-size: cover;
 -moz-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 color: #FFB545;
 }
+
 .oscurecerbg{
   background-color: rgba(0, 0, 0, 0.6);
   position: absolute;
@@ -81,10 +82,7 @@ width:20px;
 fill:#FFB545;}
 
 .menuicon:hover{
-width: 30px; 
-top: 27px;
-position: absolute;
-right: 33px; 
+transform: scale(1.5); 
 }
 .idiomas{
 margin-left: 5px;
@@ -132,17 +130,19 @@ border: 1px solid #FFB545;
 }
 
 .footer {
-   position: absolute;
-   bottom: 10px;
-   left: 0px;
-   right: 0px;
-   width: 100%;
-   margin-right: 0px;
-display:flex;
-flex-direction: row;
-flex-wrap: no-wrap;
-justify-content: center;
-align-items: center;
+  position: absolute;
+  bottom: 10px;
+  left: 0px;
+  right: 0px;
+  width: 100%;
+  margin-right: 0px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: no-wrap;
+  justify-content: center;
+  align-items: center;
+  fill: #707070;
+  color:#707070;
 }
 
 .socialmedia {
@@ -162,8 +162,9 @@ padding-bottom: 3px;
 border-bottom: 2px solid #707070;
 }
 .footer a:hover{
-	width:30px;
-	font-weight: bold;
+	transform: scale(2);
+  margin-left: 12px;
+  margin-right: 12px;
 }
 
 #abouttext {
