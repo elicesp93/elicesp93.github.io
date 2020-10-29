@@ -45,10 +45,7 @@ width:20px;
 fill:#FFB545;}
 
 .menuicon:hover{
-width: 30px; 
-top: 27px;
-position: absolute;
-right: 33px; 
+transform: scale(1.5); 
 }
 .idiomas{
 margin-left: 5px;

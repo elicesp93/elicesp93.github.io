@@ -45,22 +45,17 @@
 	.misfotos{
 		display: flex;
 		position: relative;
-		height: 350px;
-		top: 150px;
-		left: 20px
+		top: -150px;
+		width: 100%;
+		max-width: 550px;
 	}
-	.misfotos:hover{
-		transform: scale(1.2);
-	}
+	
 	#navnuevoabout{
 		width: 100%
 	}
 	h2{
 		font-size: 36px;
-    	position: relative;
-    	top: 60px;
     	text-align: right;
-    	right: 10%;
     	font-family: Montserrat;
     	color: #FFB545;
 	}
@@ -68,7 +63,7 @@
 		font-family: Montserrat;
 		font-weight: normal;
 		margin-left: 15px;
-		margin-right: 15px;
+		/*margin-right: 15px;*/
 		text-align: justify;
 	}
 	#textoprimero{
@@ -84,12 +79,12 @@
 	#ultimotexto{
 		margin-bottom: 50px;
 	}
-	#contenedorinfoabout{
+	.contenedorinfoabout{
 		display: flex;
 		width: 100%;
 		flex-wrap: wrap;
-		margin-top: 180px;
 		justify-content: center;
+		margin-top: -150px;
 	}
 	#contenedortitulosabout{
 		display: flex;
@@ -130,6 +125,7 @@
 		display: flex;
 		width: 60%;
 		flex-wrap: wrap;
+		margin-right: 15px;
 	}
 	span{
 		font-weight: 600;
@@ -143,13 +139,37 @@
 	ol li{
 		margin-bottom: 10px;
 	}
+	.navabout{
+		display: flex;
+		justify-content: space-between;
+		margin: 2%;
+		align-items: center;
+		height: 50px;
+	}
+	.antetexto{
+		width: 80%;
+	}
+	.contenedorfotos{
+		width: 100%;
+	}
+
+	@media screen and (min-width: 720px){
+		.misfotos{
+			left: 10%;
+		}
+	}
+	@media screen and (max-width: 720px){
+		.containernewabout{
+			height: 300px;
+		}
+	}
 </style>
 </head>
 
 <body>
 	<div class="containernewabout">
 		<!--TOP NAV-->
-			<div class="topnav" id="navnuevoabout">
+			<div class="navabout" id="navnuevoabout">
 			<a href="indexspa.html"><img src="recursos/logo2020pequeno.png" height="50px"></a>
   			<a href="menupagespa.html">
 				<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
@@ -171,11 +191,17 @@
 				</g>
 				</svg></a>
   			</div>
-  		<!--Fotos-->
-  			<img src="recursos/fotosabout.png" class="misfotos">
+  					
 	</div>
-	<h2>Digital Art With Mediterranean Flair</h2>
-	<div id="contenedorinfoabout">
+	<div class="contenedorfotos">
+			<!--Fotos-->
+			<img src="recursos/fotosabout.png" class="misfotos">
+	</div>
+	<div class="contenedorinfoabout">	
+		
+		<div class="antetexto">
+			<h2>Digital Art With Mediterranean Flair</h2>
+		</div>
 		<div id="textoprimero">
 			<p>
   			The Romans said <q>Ex Nihilo, Nihil Fit</q>, which in our times would translate to <q>From Nothing, Nothing Comes</q>. Therefore, I try to always be involved with something either by learning new skills and knowledge or by putting them into practice with some personal artistic project.<br><br>Hello, my name is Pablo Elices Pérez and I am a versatile and multi-skilled graphic designer as I have experience and knowledge in different fields such as brand management, digital marketing, design for printed media and web design. However, I specialize in making creative and digital art.

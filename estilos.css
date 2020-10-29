@@ -1,5 +1,5 @@
 body{
-font-family: "Open Sans",sans-serif;
+font-family:"Open Sans",sans-serif;
 font-weight: 300;}
 
 .welcometext {
@@ -9,28 +9,18 @@ left:50%;
 transform: translate(-50%, -50%);
 }
 
-.texto1 {
-color: #969696;
-font-size: 5em;
-text-align: center;
-}
-/*
-.cuerpotarjeta{
-  width: 100vw;
-  height: 100vw;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-*/
 .fondomenu{
-background: url('recursos/fondomenu1.jpg'); 
--webkit-background-size: cover;
--moz-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-color: #FFB545;
+background: url('recursos/fondomenu1.jpg');
+-webkit-background-size: auto;
+-moz-background-size: auto;
+-o-background-size: auto;
+background-size: auto;
+}
+
+@media screen and (min-width: 720px){
+  .fondomenu{
+    background-size: cover;
+  }
 }
 
 .oscurecerbg{
@@ -43,9 +33,14 @@ color: #FFB545;
   left: 0px;
   top: 0px;
 }
+
 a{
 text-decoration: none;
 color: #FFB545;}
+
+a:active {
+  transform: scale(0.9);
+}
 
 .topnav{
 display:-webkit-flex;
@@ -67,6 +62,13 @@ font-size: 14px;
   color: #FFB545;
 }
 
+.topnav a:hover{
+  color: #E08C0E;
+}
+
+.topnav a:active{
+  transform: scale(.8);
+}
 .idiomas:hover {
 padding-bottom: 3px;
 border-bottom: 4px solid #FFB545;  
@@ -82,7 +84,12 @@ width:20px;
 fill:#FFB545;}
 
 .menuicon:hover{
-transform: scale(1.5); 
+fill: #E08C0E;
+}
+
+.menuicon:active{
+transform: scale(.5); 
+
 }
 .idiomas{
 margin-left: 5px;
@@ -115,8 +122,34 @@ font-weight: bold;
 margin-top: 5px;
 margin-bottom: 5px;
 color: #FFB545;
-font-size: 2.5em;
-text-align: center;}
+font-size: 2em;
+text-align: center;
+transition-property: scale;
+transition-timing-function: ease-in;
+}
+
+.texto1:hover{
+    font-size: 2.3em;
+  }
+@media screen and (min-width: 720px){
+  .texto1{
+    font-size: 2.5em;
+  }
+  .texto1:hover{
+    font-size: 2.8em;
+    transform: scale(1.2);
+  }
+  .texto1:active{
+    transform: scale(.6);
+    transition-timing-function: ease-in;
+  }
+}
+
+.cuerpodetexto{
+  font-family: Montserrat;
+  font-size: 16px;
+
+}
 
 .seconddiv {
 	width: 35%;
@@ -213,18 +246,39 @@ width: 80%;
   transition: 2s background-position cubic-bezier(.22,.61,.36,1);
 }
 
-
+.tarjeta:hover {
+  position: relative;
+  top: -30px;
+}
 .arriba{
   width: 100%;
   height: 400px;
   background-position: top right;
   transition: 2s background-position cubic-bezier(.22,.61,.36,1);
+  max-height: 300px;
+  border-radius: 20px;
 }
-.arriba:hover{
-  background-position: center left !important;
-  cursor: pointer;
-  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
 
+.arriba:hover{
+  cursor: pointer;
+  /*box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);*/
+  /*filter: sepia(.2);*/
+  position: relative;
+  top: -30px;
+  box-shadow: 0 20px 20px rgba(0, 0, 0, 0.3);
+}
+
+.arriba:hover:after{
+  /*content: "";
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #000;
+  position: absolute;
+  bottom: -20px;
+  border-radius: 50%;
+  box-shadow: 0 3px 3px rgba(0, 0, 0, 0.5);
+  opacity: 0.5;*/
 }
 .abajo{
   width: 100%;
@@ -235,7 +289,13 @@ width: 80%;
   display: flex;
   align-items: center;
   font-weight: bold;
+  margin: 15px 0;
 }
+.abajo:hover{
+  border: 2px solid;
+  border-radius: 15px;
+}
+
 #gaydarui{
   background-image: url(recursos/thumbnailgaydarui.jpg);
   background-size: cover;
@@ -360,17 +420,25 @@ width: 80%;
 }
 .contenidoproyecto{
   display: flex;
-  width: 600px;
+  width: 100%;
   flex-wrap: wrap;
+  margin: auto;
 }
+
 .videoproyecto{
   display: flex;
   width: 80%;
   justify-content: center;
   flex-wrap: wrap;
 }
-img .videoproyecto{
-  width: 90%;
+.videoproyecto img{
+  margin: 5px;
+}
+@media screen and (min-width: 720px){
+  .videoproyecto img{
+    width: 400px;
+}
+
 }
 .resaltarimagen{
   box-shadow: 0 5px 15px gray;
@@ -405,3 +473,100 @@ font-size: 14px;
 padding-bottom: 3px;
 border-bottom: 2px solid;
 }
+
+.contenedor__video{
+width: 60%;
+min-width: 340px;
+max-width: 720px;
+margin-left: auto;
+margin-right: auto;
+
+}
+.video{
+height: 0;
+padding-bottom: 56.25%;
+position: relative;
+}
+.video iframe{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.responsive{
+  width: 100%;
+  margin: 5%;
+  max-width: 1000px;
+}
+.contenido--pdf{
+  display: flex;
+  margin-bottom:20px;
+  width: 100%;
+  max-width: 1000px;
+  align-content: center;
+}
+.centrando{
+  justify-content: center;
+}
+
+.contenedor__alicante{
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.item__alicante{
+  width: 32%;
+  padding: 5px;
+  max-width: 400px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.item__alicante :nth-child(even){
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.item__alicante img{
+  width: 100%; 
+}
+@media screen and (max-width: 720px){
+  .item__alicante{
+    width: 90%;
+    max-width: 500px;
+  }
+
+}
+.tarjetero{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 60px;
+  }
+  .carta{
+    width: 400px;
+    height: 300px;
+    margin: 40px;
+  }
+  .bloque1, .bloque2{
+    width: 50%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+  }
+  @media screen and (max-width: 720px){
+    .carta{
+      width: 300px;
+      /*height: 300px;*/
+      margin: 20px 0;
+    }
+    .tarjetero{
+      padding: 0;
+      width: 100%;
+    }
+    .bloque1, .bloque2{
+      width: 100%;
+    }
+    .arriba{
+      max-height: 200px;
+    }
+  }
