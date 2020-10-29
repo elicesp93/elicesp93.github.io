@@ -570,3 +570,8 @@ position: relative;
       max-height: 200px;
     }
   }
+  @media screen and (max-width: 720px){
+    .imagenesresponsive img{
+      width: 100%;
+    }
+  }
