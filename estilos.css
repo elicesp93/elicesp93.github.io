@@ -1,6 +1,10 @@
+* { box-sizing: border-box;}
+
 body{
 font-family:"Open Sans",sans-serif;
-font-weight: 300;}
+font-weight: 300;
+margin: 0;
+}
 
 .welcometext {
 position:absolute;
@@ -47,8 +51,13 @@ display:-webkit-flex;
 display:-ms-flexbox;
 display:flex;
 justify-content: space-between;
-margin: 2%;
+margin: 0;
 align-items: center;
+position: fixed;
+top: 0;
+background-color: white;
+width: 100%;
+box-shadow: 0px -12px 15px;
 }
 
 .topnav a{
@@ -56,6 +65,7 @@ color: #FFB545;
 font-family: Montserrat;
 font-weight: bold;
 font-size: 14px;
+margin: 10px 15px;
 }
 
 .topnav a:visited {
@@ -574,4 +584,73 @@ position: relative;
     .imagenesresponsive img{
       width: 100%;
     }
+  }
+
+  .separandotitulo{
+    margin-top: 120px;
+    margin-bottom: 30px;
+  }
+
+  .sugeridos--container{
+    margin: 0 20px 30px 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+  }
+
+  .sugeridos--item{
+    margin: 0 20px;
+  }
+
+  .avatar--item{
+    width: 200px;
+    height: 130px;
+    margin: 10px 0;
+    border-radius: 15px;
+  }
+
+  .texto--item{
+    margin: 10px 0;
+    color: #707070;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .avatar--item:hover{
+    color: #FFB545;
+    clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  }
+
+  .sugeridos--item:hover:after{
+    content: "";
+    display: block;
+    position: relative;
+    width: 120px;
+    height: 2px;
+    background-color: #FFB545;
+    left: 50%;
+    transform: translate(-50%);
+  }
+.proyectoui{
+  width: 100%;
+  max-width: 1000px;
+}
+.proyectoui img{
+  max-width: 100%;
+}
+
+@media screen and (max-width: 720px){
+  .resaltarimagen{
+    box-shadow: 0 0px 0px gray;
+  }
+}
+
+.nodestacar{
+    border-bottom: none !important;
+    color: gray !important;
+    font-size: 12px !important;
+  }
+  .nodestacar:hover{
+    border-bottom: 2px solid !important;
   }
