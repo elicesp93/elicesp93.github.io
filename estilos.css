@@ -12,6 +12,12 @@ top:50%;
 left:50%;
 transform: translate(-50%, -50%);
 }
+.welcometext p{
+  color: #707070;
+font-size: 2em;
+text-align: center;
+font-weight: 500;
+}
 
 .fondomenu{
 background: url('recursos/fondomenu1.jpg');
