@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge"><!-- Ordenamos a Internet Explorer usar su motor de renderizado más reciente -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"><!-- Viewport para diseño web responsivo -->
+    <meta name="description" content="Portfolio web from Pablo Elices- Branding and Design">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family="Montserrat">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="estilos.css">
+    <link rel="resources"  href="/recursos">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+
+    <link rel="icon" type="image/png" href="recursos/favicon.png">
+
+    <title>UX / UI Projects by Pablo ELices </title>
+    
+   <!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-170807701-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-170807701-1');
+</script>
+<style type="text/css">.rojo{color: red;}</style>
+</head>
+<body>
+ <div id="div1" style="width: 50px; height: 50px; background: red;"></div>
+ <br>
+ <br>
+ <br>
+ <br>
+ <div id="div2">
+   <h1>AABBCC</h1>
+ </div>
+ <script>
+   $("#div1").click( function textorojo(){
+    $("#div2").addClass("rojo");
+   });
+ </script>
+</body>
+</html>
