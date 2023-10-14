@@ -1,5 +1,7 @@
 
 
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
 /*definir variables*/
 :root{
     --color-brow-100: #564E43;
@@ -21,7 +23,7 @@
     box-sizing: border-box;
 }
 body{
-    font-family: Open Sans;
+    font-family: 'Open Sans', sans-serif;
     line-height: normal;
 }
 
@@ -194,7 +196,6 @@ body{
 }
 p.text-style-1{
     color: var(--color-brow-100);
-font-family: Open Sans;
 font-size: 1.25rem;
 font-style: normal;
 font-weight: 400;
@@ -257,7 +258,6 @@ p.text-style-1 a{
 
 .aboutcopy-page p, .aboutcopy-page li{
     color: #564E43;
-    font-family: Open Sans;
     font-size: 1.1rem;
     font-style: normal;
     font-weight: 400;
@@ -271,7 +271,6 @@ p.text-style-1 a{
 }
 #about-block1 h1{
     color: #D5C9AE;
-    font-family: Open Sans;
     font-size: 4rem;
     font-style: normal;
     font-weight: 800;
@@ -280,7 +279,6 @@ p.text-style-1 a{
 }
 .aboutcopy-page h2 {
     color: #564E43;
-    font-family: Open Sans;
     font-size: 28px;
     font-style: normal;
     font-weight: 700;
@@ -289,7 +287,6 @@ p.text-style-1 a{
 }
 #about-block3 p{
     color: #1F1A14;    
-    font-family: Open Sans;
     font-size: 1.25rem;
     font-style: normal;
     font-weight: 400;
@@ -393,7 +390,6 @@ p.text-style-1 a{
 }
 #ed-block3 h2{
     color: var(--color-grey-200);
-    font-family: Open Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -428,7 +424,6 @@ p.text-style-1 a{
 }
 
 span.case-figure-negative, .case-figure-positive{
-    font-family: Open Sans;
     font-size: 90px;
     font-style: normal;
     font-weight: 700;
@@ -457,7 +452,6 @@ color: var(--color-red-100);}
 }
 #ed-block4 h2, #piensa-block4 h2{
     color: var(--oscuros-gris-3, #3B3B3B);
-font-family: Open Sans;
 font-size: 53px;
 font-style: normal;
 font-weight: 800;
@@ -468,7 +462,6 @@ line-height: normal;
 }
 #ed-block4 h2 .decrease, #piensa-block4 h2 .decrease{
     color: var(--oscuros-gris-4, #1D181C);
-    font-family: Open Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -505,7 +498,7 @@ color: white;
 }
 .chart-lean-ux{
     position: relative;
-    width: calc(100% - 40px);
+    width: 435px;
     height: 100%;
     margin: 0 20px;
 }
@@ -515,7 +508,7 @@ color: white;
 }
 
 #floating-1{top: -15px; left:150px;}
-#floating-2{top:50%; left: 74%;}
+#floating-2{top:50%; left: 320px;}
 #floating-3{top:220px; left:-20px;}
 
 #ed-block4 li{
@@ -528,7 +521,6 @@ color: white;
 }
 #ed-block5 h3, #ed-block6 h3, #ed-block7 h3{
     color: #FFF;
-    font-family: Open Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -539,7 +531,6 @@ color: white;
 }
 #ed-block5 h4, #ed-block6 h4{
     color: var(--color-grey-200);
-font-family: Open Sans;
 font-size: 30px;
 font-style: normal;
 font-weight: 700;
@@ -1068,7 +1059,6 @@ padding: 0 20px;
 
 #piensa-block3 h3, #piensa-block4 h3,#piensa-block5 h3,#piensa-block6 h3, #piensa-block7 h3, #piensa-block8 h3{
     color: #FFF;
-    font-family: Open Sans;
     font-size: 36px;
     font-style: normal;
     font-weight: 700;
@@ -1180,18 +1170,18 @@ path[id^="ola-"]{
     stroke-dashoffset: 2350;
 }
 #ola-09{
-    animation: draw-wave 6s ease 1250ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;}
+    animation: draw-wave 6s ease 1250ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;}
 #ola-08 {
-    animation: draw-wave 6s ease 1100ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;
+    animation: draw-wave 6s ease 1100ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;
 }
 #ola-07 {
-    animation: draw-wave 6s ease 950ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;}
+    animation: draw-wave 6s ease 950ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;}
 #ola-06 {
-    animation: draw-wave 6s ease 800ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;}
+    animation: draw-wave 6s ease 800ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;}
 #ola-06 {
-    animation: draw-wave 6s ease 650ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;}
+    animation: draw-wave 6s ease 650ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;}
 #ola-05 {
-    animation: draw-wave 6s ease 500ms 1 forwards, draw-wave-repeat 6s ease 10s infinite forwards;
+    animation: draw-wave 6s ease 500ms 1 forwards, draw-wave-repeat 12s ease 10s infinite forwards;
 }
 
 @keyframes draw-wave {
@@ -1212,4 +1202,12 @@ path[id^="ola-"]{
     to {
         stroke-dashoffset: 0;
     }
+}
+
+
+/* Responsive Design to small screens pantallas pequeñas */
+@media (min-width: 1900px) {
+    #home-olas{bottom: -25%; left:-65%;}
+    .about-olivas{top:100vh}
+    #piensa-block5 .persona .persona-parte3{width: unset;}
 }
