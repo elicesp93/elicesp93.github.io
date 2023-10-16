@@ -86,10 +86,10 @@ body{
 #home-container{
     display: flex;
     flex-wrap: wrap;
-    width: 100dvw;
+    width: 100%;
 }
 #home-left-side{
-    width: 50dvw;
+    width: 50%;
     height:100dvh;
     background-color: white;
     display: flex;
@@ -102,14 +102,28 @@ body{
     overflow: hidden;
 }
 #home-right-side {
-    position: relative;
+    /* position: relative;
     width: 50vw;
     min-height: 100vh;
-    padding:2rem;
+    
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
-    margin-left: 50dvw;
+    justify-content: space-evenly;*/
+    width: 50%;
+    height: fit-content;
+    padding:1rem 2rem;
+    margin-left: 50%; 
+    /* background-image: url(../recursos/other/texture-01.png); */
+    
+}
+.project-cards-container{
+    width:100%;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    column-gap: 40px;
+    justify-content: space-between;
+
 }
 .contact-container{
     display: flex;
@@ -152,11 +166,11 @@ body{
     max-width: 520px;
     text-decoration: none;
     color: var(--color-brow-100);
-    height: 300px;
+    /* height: 300px; */
     
 }
 .project-card{  
-    padding: 20px;
+    padding: 10px 20px;
     border: 2px solid rgba(108, 96, 75, 0.50);
     border-radius: 12px;
     box-shadow: 8px 8px 16px 0px rgba(0, 0, 0, 0.15);;
@@ -191,7 +205,7 @@ body{
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
-    height: 3.6em;
+    height: 2.4em;
     line-height: 1.2em;
 }
 p.text-style-1{
@@ -1204,10 +1218,161 @@ path[id^="ola-"]{
     }
 }
 
+/* Página Gaydar */
+.gaydar-page{
+    background-color: #fff;
+    margin: 0 15vw;
+    color: #222D43;
+    text-align: justify;
+}
+.gaydar-page > div[id^="gaydar-block"]{
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: start;
+    justify-content: center;
+    width: 100%;
+    
+}
+#gaydar-block1{
+    background: linear-gradient(83deg, #17536B 0%, #3D294E 98.92%);
+    color: #ffffff;
+    position: relative;
+    height: 625px;
+    display: block;
+    padding-top: 100px;
+}
+#gaydar-block1 img{
+    width: 450px;
+    position: absolute;
+}
+#gaydar-block1 img:first-of-type{
+    width: 160px;
+    bottom: 40px;
+    right: 5%;
+}
+#gaydar-block1 img:last-of-type{
+    bottom: -50%;
+    left: calc(50% - 225px);
+}
+#gaydar-block2{
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+}
+#gaydar-block2 .mitad{ width: 50%; display: flex; flex-direction: column; justify-content: end; min-height: 580px; gap: 1rem; padding-bottom: 2rem;}
+#gaydar-block2 .mitad:last-of-type{background-color: #17536B;}
+#gaydar-block2 .mitad:last-of-type p{color: #ffffff; width: 360px;}
+#gaydar-block2 .mitad .figures{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 100%;
+}
+#gaydar-block2 .mitad span{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 45px */
+    text-transform: uppercase;
+}
+#gaydar-block2 .figure-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#gaydar-block2 .figure-container span{
+    font-size: 72px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%; /* 90px */
+}
+
+.gaydar-page h2{
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+}
+.gaydar-page h3{
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+#gaydar-block3 h2{
+font-size: 36px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+text-transform: uppercase;
+}
+#gaydar-block3 h2 span{color: #5E248F;}
+#gaydar-block3 h2:last-of-type{font-size: 30px;}
+#gaydar-block3 div p{
+    max-width: 80%;
+text-align: justify;
+}
+#gaydar-block5 img{
+    width: 80%;
+    max-width: 1400px;
+    margin: 0 auto;
+}
+#gaydar-block6{ position: relative;}
+#gaydar-block6 div{ width: 80%;}
+#image-hotspots{
+    position: absolute;
+    max-width: 220px;
+    opacity: 0.3;
+    right: -30px;
+    bottom: 60px;
+}
+#gaydar-block7, #gaydar-block9 {padding: 0;}
+#image-travel-tab, #image-highlighted-profiles{
+    width: 100%;
+    margin: 0 auto;
+}
+#gaydar-block10{ padding-bottom: 0;}
+#image-gaydar-icons{
+    width: 100%;
+    max-width: 1400px;
+}
+#gaydar-block11{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    
+}
+#gaydar-block11 span{
+    font-weight: 700;
+}
+#gaydar-block11 .mitad{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    align-items: center;
+    gap: 40px;
+}
+#gaydar-block11 img{
+    width: 40%;
+    max-width: 260.569px;
+    border-radius: 18px;
+}
+.gaydar-image-container{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 10px;
+}
 
 /* Responsive Design to small screens pantallas pequeñas */
 @media (min-width: 1900px) {
     #home-olas{bottom: -25%; left:-65%;}
+    #home-right-side{ min-height: 100vh;}
     .about-olivas{top:100vh}
     #piensa-block5 .persona .persona-parte3{width: unset;}
 }
