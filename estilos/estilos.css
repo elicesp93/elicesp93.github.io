@@ -1934,5 +1934,25 @@ text-transform: uppercase;
 #gaydar-block12 img{width: 100%;}
 #gaydar-block12 .etiquetas-store img{width: 150px; height: 48px;}
 
+/* Pagina about Responsive mobile */
+.aboutcopy-page{margin: 0 20px;}
+#about-block1 h1{font-size: 32px;}
+.aboutcopy-page h2{font-size: 24px;}
+.aboutcopy-page p, .aboutcopy-page li{width: 100%;}
+#about-textura{width: 100%;}
+#about-portrait{
+    width: 240px;
+    top: -48px;
+    right: unset;
+}
+#about-block3 p{
+    text-align: start;
+    margin-top: 180px;
+}
+.about-olivas{
+    scale: unset;
+    top: 160dvh;
+    opacity: .2;
+}
 }
 
