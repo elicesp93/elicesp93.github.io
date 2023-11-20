@@ -67,17 +67,20 @@ body{
     display: none;
 }
 #scrollToTopBtn, #scrollToBottomBtn{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     border-radius: 40px;
     box-shadow: 0px 4px 4px 0 rgba(0, 0, 0, 0.3);
-    /* background-color: #fff; */
     color: #1D181C;
     border: unset;
     margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 #scrollToTopBtn img, #scrollToBottomBtn img{
-    fill: #1D181C;;
+    fill: #1D181C;
+    width: 20px;
 }
 #scrollToBottomBtn img{
     transform: rotate(180deg);
@@ -532,9 +535,9 @@ color: white;
 }
 
 #ed-block5{
-    background: #F3EFF5;
-    
+    background: #F3EFF5;  
 }
+
 #ed-block5 h3, #ed-block6 h3, #ed-block7 h3{
     color: #FFF;
     font-size: 36px;
@@ -800,6 +803,9 @@ p.ds-text {
     justify-content: center;
 }
 /*LEAN UX Check stage*/
+#ed-block7{
+    background: #F3EFF5;  
+}
 .hotjar-container{width: 100%;}
 .hotjar-container h4{color: #1D181C;
     font-size: 30px;
@@ -1153,12 +1159,13 @@ dotlottie-player{
 #piensa-block7 ul{
     margin:0;
 }
+#piensa-block7{background-color: #EFF5F5;}
 
 /* Resultados / Premios PIENSA */
 
 #piensa-block8{
     width: 100%;
-    background-color: #EFF5F5;
+    gap: 2rem;
 }
 #piensa-block8 h2 {
      color: var(--color-grey-200);
@@ -1179,6 +1186,7 @@ p.premios-espacio{
     margin-top: 0;
     margin-bottom: 20px;
 }
+.etiquetas-store img{width: 150px; height: 48px;}
 
 /* Animación olas  */
 path[id^="ola-"]{
@@ -1613,7 +1621,7 @@ text-transform: uppercase;
 #ph-block8 img{
     width: 100%;
 }
-/* Responsive Design to small screens pantallas pequeñas */
+/* Responsive Design to big screens pantallas grandes */
 @media (min-width: 1900px) {
     #home-olas{bottom: -25%; left:-65%;}
     #home-right-side{ min-height: 100vh;}
@@ -1622,3 +1630,309 @@ text-transform: uppercase;
     .project-cards-container{padding-bottom: 0;}
     #ph-block6 .container-personas .persona{min-width: 360px;}
 }
+
+/* Responsive Design to mobile devices pantallas pequeñas movil */
+@media screen and (max-width: 720px){
+    #home-left-side{
+        width: 100%;
+        height: 50dvh;
+        position: unset;
+    }
+    #main-logo img{
+        width: 40%;
+        max-width: 300px;
+    }
+    #home-intro{width: 80%;}
+    #home-intro p{width: 100%; font-size: 1rem;}
+    #home-olas{display: none;}
+
+    #home-right-side{
+        width: 100%;
+        height: unset;
+        min-height: unset;
+        position: unset;
+        margin-left: 0;
+        flex-direction: column-reverse;
+        background-color: #f2efeb;
+    }
+    #home-right-side::after {
+        content: none;}
+    .project-cards-container{
+        gap: 20px;
+    }
+    #home-right-side a{
+        width: 100%;
+    }
+    .contact-container{
+        position: unset;
+    }
+
+
+    /*Case Studies responsive mobile*/
+    .eduida-page, .piensa-page, .ph-page, .gaydar-page{
+        margin: 0;
+    }
+    .navbar.case-study{
+        width: 100dvw;
+        padding: 4vh 4vw 4vh;
+    }
+    #scrollToTopBtn, #scrollToBottomBtn{
+        width: 40px;
+        height: 40px;
+    }
+    #scrollToTopBtn img, #scrollToBottomBtn img{
+        width: 25px;
+    }
+    
+    /* Eduida Case Study Responsive Mobile */
+    .case-study h2{
+        font-size:40px;
+        margin: 1rem 0;
+    }
+    .hero-image{width: 100%;}
+
+    #ed-block4 h2, #piensa-block4 h2, #ph-block4 h2{
+        font-size:40px;
+        margin: 1rem 0;
+    }
+    .case-study h3{
+        font-size:28px;
+        margin: 1rem 0;
+        padding: 8px;
+    }
+    #ed-block5 h3, #ed-block6 h3, #ed-block7 h3{
+        font-size:28px;
+        margin: 1rem 0;
+        padding: 8px;
+    }
+    .case-study h4{
+        font-size:28px;
+        margin: .5rem 0;
+    }
+    #ed-block5 h4, #ed-block6 h4, #ed-block7 h4{
+        font-size:28px;
+        margin: .5rem 0;
+    }
+
+    .eduida-page > div[id^="ed-block"]{
+        padding: 40px 20px;
+    }
+    .stats-line{
+        justify-content:center;
+        gap: 1rem;
+        padding: 0;
+    }
+    #ed-block3 div{width: 100%;}
+    span.case-figure-negative, .case-figure-positive{ font-size: 60px;}
+    #ed-block4{
+        flex-direction: column;
+    }
+    .mitad{width: 100%; gap: 1rem;}
+    .chart-lean-ux{width: 320px; margin: 0;}
+    .chart-lean-ux img{width: 320px;}
+    #floating-1{
+        left: calc(50% - 20px);
+    }
+    #floating-2{
+        top: calc(50% - 10px);
+        left: unset;
+        right: -22px;
+    }
+    #floating-3{left: -11px;}
+    .container-personas{flex-direction: column;}
+    .persona{
+        width: 100%;
+        gap: 4px;
+    }
+    .persona p, .persona span{
+        font-size: 14px;
+    }
+    .container-personas-insights > div{
+        flex-direction: column;
+        gap: 0;
+    }
+    .competitors-audit-hero{flex-direction: column;}
+    .competitors-audit-type{width: 100%;}
+    .insights-card-type1{width: 100%;}
+    img[src*="recursos/eduida/EduidaLogo.png"] {width: 100%;}
+
+    .eduida-ds-container{flex-direction: column;}
+    .eduida-ds-container .ds-left-side, .eduida-ds-container .ds-right-side{width: 100%;}
+    .eduida-ds-container .ds-right-side{align-items: center;}
+    .eduida-ds-container .ds-right-side img{width: 50%; padding: 0; margin: 5vw 0;}
+
+    .ia-container img{width: 100%;}
+    .wireframes-prototypes-container .mockups-container{flex-direction: column;}
+    .wireframes-prototypes-container .mockups-text{position: unset;}
+    .wireframes-prototypes-container .mockups-text p{text-align: start;}
+
+    .hotjar-preview img{
+        width: 100%;
+    }
+
+    /* PIENSA Case Study Responsive mobile */
+    .piensa-page > div[id^="piensa-block"]{padding: 40px 20px;}
+    #piensa-block2 #image-award {
+        bottom: 5%;
+        right: 5%;
+        scale: 0.8;
+    }
+
+    .two-sides-chart {
+        height: unset;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .two-sides-list{position: relative; height: unset;}
+    .two-sides-chart div:nth-child(2) img{
+        position: unset;
+        width: 100%;
+    }
+    .two-sides-chart div:nth-child(2){ position: relative;}
+    .two-sides-list::before {
+        top: calc(50% - 3px);
+        left: -3px;
+    }
+    .two-sides-list::after{
+        bottom: calc(50% - 3px);
+        left: calc(100% - 3px);
+    }
+    .two-sides-chart .linea{
+        width: 40px;
+        transform: rotate(90deg);
+    }
+    .two-sides-chart .linea:first-child{
+        top: 10px;
+        left: 25%;
+    }
+    .two-sides-chart .linea:last-child{
+        width: 40px;
+        bottom: 10px;
+        right: 25%;
+    }
+
+    #piensa-block4{flex-direction: column;}
+    
+    #piensa-block5 .persona{
+        flex-direction: column;
+        padding: 1rem;
+    }
+    #piensa-block5 .persona .persona-parte1 {
+        max-width: 100%;
+        display: flex;
+        gap: 1rem;
+        align-items: center;
+    }
+    #piensa-block5 .persona img{max-width: 120px;}
+    #piensa-block5 .persona .persona-parte2{width: 100%; margin-top: 1rem;}
+    #piensa-block5 .persona .persona-parte3{width: 100%;}
+
+    #piensa-block3 h3, #piensa-block4 h3, #piensa-block5 h3, #piensa-block6 h3, #piensa-block7 h3, #piensa-block8 h3{
+        font-size:28px;
+        margin: 1rem 0;
+        padding: 8px;
+    }
+    #piensa-block3 h4, #piensa-block4 h4, #piensa-block5 h4, #piensa-block6 h4, #piensa-block7 h4, #piensa-block8 h4{
+        font-size:28px;
+        margin: .5rem 0;
+    }
+    #piensa-block6 h4{text-align: center;}
+
+    .competitive-analysis{flex-direction: column;}
+    #before-sale, #during-sale, #after-sale{width: 100%;}
+
+    .piensa-ia-maps{flex-direction: column;}
+    #piensa-nav-map, #piensa-user-flow{width: 100%;}
+    .piensa-ds-documentation .ds-left-side, .piensa-ds-documentation .ds-right-side{width: 100%;}
+    .animations-lottie{gap: 1rem;}
+
+/*Plus Holidays Case Study responsive*/
+.ph-page > div[id^="ph-block"]{
+    padding: 40px 20px;
+}
+#ph-block5 h3, #ph-block6 h3, #ph-block7 h3, #ph-block8 h3{
+    font-size:28px;
+    margin: 1rem 0;
+    padding: 8px;
+}
+#ph-block3 h4, #ph-block4 h4, #ph-block5 h4, #ph-block6 h4, #ph-block7 h4, #ph-block8 h4{
+    font-size:28px;
+    margin: .5rem 0;
+}
+
+#ph-block4{flex-direction: column;}
+.ph-dd-stages{align-items: center; flex-direction: column;}
+
+.ph-bechmarking-container{flex-direction: column;}
+.bechnmarking-mitad{width: 100%;}
+#ph-block5 .bechnmarking-mitad h4{ text-align: center;}
+.ph-image-personas{width: 120px;}
+
+#ph-block6 .container-personas .persona{
+    min-width: unset;
+    max-width: unset;
+}
+#ph-block6 .container-personas .persona li{ font-size: 14px; margin: 4px 0;}
+#ph-block6 .ph-ia-photos{flex-direction: column; gap: 1rem;}
+#ph-block6 .ph-ia-photos img{width: 100%;}
+
+#ph-block7 .ph-ds-container{
+    flex-direction: column;
+    gap: 2rem;
+}
+#ph-block7 .ph-ds-mitad{width: 100%;}
+#ph-block7 .ph-ds-mitad:last-of-type{gap: 1rem;}
+
+/* Gaydar Case Study responsive mobile */
+.gaydar-page > div[id^="gaydar-block"]{
+    padding: 40px 20px;
+}
+.gaydar-page p{
+    margin: 8px 0;
+}
+.gaydar-page h2{
+    margin: 1rem 0;
+}
+#gaydar-block1{
+    position: unset;
+    height: fit-content;
+}
+#gaydar-block1 img{
+    width: 100%;
+    max-width: 450px;
+    position: unset;
+}
+#gaydar-block1 img:first-of-type{
+    bottom: unset;
+    right: unset;
+    width: 120px;
+    margin-top: 1rem;
+}
+#gaydar-block2 .mitad{justify-content: center;}
+#gaydar-block2 .mitad .figures{flex-direction: column;}
+#gaydar-block2 .mitad span{text-align: center;}
+#gaydar-block2 .mitad:first-of-type >p{text-align: center; padding: 8px;}
+#gaydar-block2 .mitad:last-of-type p{width: unset; padding: 0 16px; text-align: start;}
+
+#gaydar-block3 div p{max-width: 100%;}
+#gaydar-block3 h2{text-align: start;}
+
+#gaydar-block5{padding: 0 20px; }
+#gaydar-block5 img{width: 100%;}
+
+#gaydar-block6 div{width: 100%;}
+#gaydar-block6 div:last-of-type{position: relative;}
+#image-hotspots{
+    max-width: unset;
+    opacity: 0.15;
+    right: calc(50% - 168px);
+    bottom: calc(50% - 168px);
+}
+
+#gaydar-block11 img{border-radius: 6px;}
+#gaydar-block12 img{width: 100%;}
+#gaydar-block12 .etiquetas-store img{width: 150px; height: 48px;}
+
+}
+

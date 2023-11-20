@@ -20,7 +20,7 @@ window.onscroll = function() {
 
 function scrollFunction() {
     if (document.body.scrollTop > 800 || document.documentElement.scrollTop > 800) {
-        scrollToTopButton.style.display = "block";
+        scrollToTopButton.style.display = "flex";
     } else {
         scrollToTopButton.style.display = "none";
     }
